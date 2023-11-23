@@ -1,7 +1,9 @@
 <html lang="ro">
-<head><meta charset="utf-8">
+   <head><meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   
 <style>
-#banner {
+#banner_cortina {
   position: fixed;
   top: 0;
   left: 0;
@@ -12,20 +14,20 @@
   z-index: 9999;
 }
 
-#banner img {
+#banner_cortina img {
   width: 300px;
   height: 250px;
   margin: 20px;
   float: left;
 }
 
-#banner p {
+#banner_cortina p {
   font-size: 20px;
   color: black;
   margin: 20px;
 }
 
-#banner a {
+#banner_cortina a {
   display: block;
   text-align: center;
   font-size: 25px;
@@ -35,20 +37,20 @@
 </style>
 </head>
 <body>
-<div id="banner">
-  <img src="foto.jpg" alt="Foto">
+<div id="banner_cortina">
+  <img src="https://www.mediaexpres.ro/Media Expres flip/Anuar2023/files/mobile/1.jpg"" alt="Coperta Anuar Media Expres 2023">
   <p>A apărut ANUARUL MEDIA EXPRES 2023!</p>
-  <a href="link.html" target="_blank">Click aici pentru a vizita site-ul nostru</a>
+  <a href="link.html" target="_blank">Click aici!</a>
 </div>
 <script>
   // Afișează bannerul după 3 secunde
   setTimeout(function() {
-    document.getElementById("banner").style.display = "block";
+    document.getElementById("banner_cortina").style.display = "block";
   }, 3000);
 
   // Ascunde bannerul după alte 3 secunde
   setTimeout(function() {
-    document.getElementById("banner").style.display = "none";
+    document.getElementById("banner_cortina").style.display = "none";
   }, 6000);
 </script>
 </body>
