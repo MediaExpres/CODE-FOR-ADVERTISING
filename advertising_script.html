@@ -1,7 +1,8 @@
 <html lang="ro">
-   <head><meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 #banner_cortina {
   position: fixed;
@@ -34,13 +35,28 @@
   color: blue;
   text-decoration: none;
 }
+
+#banner_cortina button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: gray;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
 </style>
 </head>
 <body>
 <div id="banner_cortina">
-  <img src="https://www.mediaexpres.ro/Media Expres flip/Anuar2023/files/mobile/1.jpg"" alt="Coperta Anuar Media Expres 2023">
+  <img src="https://www.mediaexpres.ro/Media Expres flip/Anuar2023/files/mobile/1.jpg" alt="Coperta Anuar Media Expres 2023">
   <p>A apărut ANUARUL MEDIA EXPRES 2023!</p>
   <a href="link.html" target="_blank">Click aici!</a>
+  <button id="close_button">×</button>
 </div>
 <script>
   // Afișează bannerul după 3 secunde
@@ -52,6 +68,13 @@
   setTimeout(function() {
     document.getElementById("banner_cortina").style.display = "none";
   }, 6000);
+
+  // Ascunde bannerul la apăsarea butonului de închidere
+  document.getElementById("close_button").addEventListener("click", function() {
+    document.getElementById("banner_cortina").style.display = "none";
+  });
 </script>
 </body>
+</html>
+
 </html>
